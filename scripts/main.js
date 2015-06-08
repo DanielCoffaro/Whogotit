@@ -30,6 +30,7 @@
             listItem.appendChild(text);
             fragment.appendChild(listItem);
         });
+        list.innerHTML = '';
         list.appendChild(fragment);
     };
 
