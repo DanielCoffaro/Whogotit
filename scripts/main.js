@@ -40,6 +40,7 @@
 
         addItem(who,what,when.getTime)
         e.preventDefault();
+        render();
     });
 
     addItem('Dan','The Good Parts', Date.now());
