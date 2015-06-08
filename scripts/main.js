@@ -33,12 +33,13 @@
         list.appendChild(fragment);
     };
 
-    form.addEventListener('submit',function(){
+    form.addEventListener('submit',function(e){
         var who = whoInput.value,
         what = whatInput.value,
         when = new Date(parseInt(whenInput,10));
 
         addItem(who,what,when.getTime)
+        e.preventDefault();
     });
 
     addItem('Dan','The Good Parts', Date.now());
