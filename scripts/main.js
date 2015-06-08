@@ -19,7 +19,7 @@
             var text = document.createTextNode(item.who + ' has my ' + item.what + '(' + item.when ')');
 
             listItem.appendChild(text);
-            list.appendChild(text);
+            list.appendChild(listItem);
         });
     }:
 
