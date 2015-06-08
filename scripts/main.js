@@ -14,4 +14,4 @@
     addItem('Dan,The Good Parts', new Date().now());
 
     console.log(borrowed);
-})();
+}());
