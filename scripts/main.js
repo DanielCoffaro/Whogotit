@@ -39,7 +39,7 @@
         when = new Date(parseInt(whenInput,10));
 
         addItem(who,what,when.getTime)
-    }):
+    });
 
     addItem('Dan','The Good Parts', Date.now());
     addItem('Ryan','Knowledge', Date.now());
