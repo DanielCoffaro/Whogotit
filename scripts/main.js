@@ -11,7 +11,7 @@
         });
     };
 
-    addItem('Dan,The Good Parts', Date().now());
+    addItem('Dan,The Good Parts', Date.now());
 
     console.log(borrowed);
 }());
