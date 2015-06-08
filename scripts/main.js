@@ -11,15 +11,19 @@
         });
     };
 
-    var list = document.getElementById('stuff')
+    var list = document.getElementById('stuff');
+    var form = document.getElementById('input'),
+    whoInput = document.getElementById('whoInput'),
+    whatInput = document.getElementById('whatInput'),
+    whenInput = document.getElementById('whenInput');
 
     var render = function(){
 
         var fragment = document.createDocumentFragment();
 
         borrowed.forEach(function(item){
-            var when = new Date(item.when)
-            var formatted = when.toLocaleString()
+            var when = new Date(item.when);
+            var formatted = when.toLocaleString();
             var listItem = document.createElement('li')
             var text = document.createTextNode(item.who + ' has my ' + item.what + '  (' + formatted + ')');
 
@@ -28,6 +32,14 @@
         });
         list.appendChild(fragment);
     };
+
+    form.addEventListener('submit',function(){
+        var who = whoInput.value,
+        what = whatInput.value,
+        when = new Date(parseInt(whenInput,10));
+
+        addItem(who,what,when.getTime)
+    }):
 
     addItem('Dan','The Good Parts', Date.now());
     addItem('Ryan','Knowledge', Date.now());
