@@ -21,7 +21,7 @@
             listItem.appendChild(text);
             list.appendChild(listItem);
         });
-    }:
+    };
 
     addItem('Dan,The Good Parts', Date.now());
 
