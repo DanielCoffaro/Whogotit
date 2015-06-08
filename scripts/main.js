@@ -15,8 +15,10 @@
 
     var render = function(){
         borrowed.forEach(function(item){
+            var when = new Date(item.when)
+            var formatted = when.toLocalFormat()
             var listItem = document.createElement('li')
-            var text = document.createTextNode(item.who + ' has my ' + item.what + '(' + item.when + ')');
+            var text = document.createTextNode(item.who + ' has my ' + item.what + '(' + formatted + ')');
 
             listItem.appendChild(text);
             list.appendChild(listItem);
