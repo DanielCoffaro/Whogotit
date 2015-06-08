@@ -11,7 +11,7 @@
         });
     };
 
-    var list = document.getElementsById('stuff')
+    var list = document.getElementById('stuff')
 
     var render = function(){
         borrowed.forEach(function(item){
