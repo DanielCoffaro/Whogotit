@@ -3,7 +3,7 @@
 (function(){
     var borrowed = [];
 
-    var addItem() = function(who,what,when){
+    var addItem = function(who,what,when){
         borrowed.push({
         who: who,
         what: what,
