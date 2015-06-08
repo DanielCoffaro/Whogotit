@@ -16,7 +16,7 @@
     var render = function(){
         borrowed.forEach(function(item){
             var listItem = document.createElement('li')
-            var text = document.createTextNode(item.who + ' has my ' + item.what + '(' + item.when ')');
+            var text = document.createTextNode(item.who + ' has my ' + item.what + '(' + item.when + ')');
 
             listItem.appendChild(text);
             list.appendChild(listItem);
